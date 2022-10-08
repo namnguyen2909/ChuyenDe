@@ -1,0 +1,71 @@
+﻿.footer_info_css
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.search_info_css {
+    margin-bottom: 25px;
+}
+
+.line_lb_css {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.txt_bt_css {
+    padding: 15px 0 15px 0;
+    color: #ff6a00;
+}
+/********************BEGIN: CSS for Grid View**************************/
+.dxgvEditFormDisplayRow td.dxgv, .dxgvDetailCell td.dxgv, .dxgvDataRow td.dxgv, .dxgvDetailRow.dxgvADR td.dxgvAIC {
+    border-bottom: 1px Solid #e3e3e8;
+    border-right: 1px Solid #e3e3e8;
+}
+
+
+.dxgvFilterRow td.dxgv {
+    border-bottom: 1px Solid #e3e3e8;
+    border-right: 1px Solid #e3e3e8;
+}
+
+.dxgvFilterRow {
+    background-color: #f4f4f9;
+}
+
+.dxgvHeader {
+    border: 1px Solid #d3e3e8;
+    background: #f4f4f9;
+    padding: 12px 0 12px 0 !important;
+}
+
+.dxgvControl, .dxgvDisabled {
+    border: 1px Solid #c0e3e8;
+}
+
+tr.dxgvDataRow:hover {
+    background: #ffeab4;
+}
+
+/********************END: CSS for Grid View**************************/
+
+@media only screen and (max-width: 650px) {
+    .footer_ait_title_css {
+        padding: 0;
+        width: 100%;
+    }
+
+    .top-logo {
+        width: 100px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .control_css {
+        margin-bottom: 0px;
+    }
+}
+
+    

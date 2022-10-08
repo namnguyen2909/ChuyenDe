@@ -1,0 +1,1278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6763B280-A169-4FF9-9085-C53F20C0E4BC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CPanel</RootNamespace>
+    <AssemblyName>CPanel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\CPanel\StandardLib_WebForm\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGauges.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v17.2.resources">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxRichEdit.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v17.2.Design">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v17.2.resources">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v17.2.resources">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.2.resources">
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core">
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core">
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.2.Core">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v17.2">
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2.Web">
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.2.Design">
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core">
+    </Reference>
+    <Reference Include="FlexCel">
+      <HintPath>..\..\..\..\0-SVN (Aug 2017)\Retro SKT\SourceCode\0_Retro_SKT_Latest_2017 (TuyenDV)\Retro_Web_DEV17\bin\FlexCel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\CPanel\StandardLib_WebForm\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.8\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\CPanel\StandardLib_WebForm\bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.1\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\TitleConst.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\TopMenu.xml" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\CPanel.dll" />
+    <Content Include="bin\CPanel.pdb" />
+    <Content Include="bin\DevExpress.Charts.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.CodeParser.v17.2.dll" />
+    <Content Include="bin\DevExpress.Data.v17.2.dll" />
+    <Content Include="bin\DevExpress.Data.v17.2.xml" />
+    <Content Include="bin\DevExpress.Images.v17.2.dll" />
+    <Content Include="bin\DevExpress.Office.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.Office.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.Pdf.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.Pdf.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.PivotGrid.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.PivotGrid.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.Printing.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.Printing.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.RichEdit.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.RichEdit.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.Sparkline.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.Sparkline.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.SpellChecker.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.SpellChecker.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.Utils.v17.2.dll" />
+    <Content Include="bin\DevExpress.Utils.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxGauges.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxGauges.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxHtmlEditor.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxHtmlEditor.v17.2.resources.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxHtmlEditor.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxPivotGrid.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxPivotGrid.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxRichEdit.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxRichEdit.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxScheduler.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxScheduler.v17.2.resources.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxScheduler.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxSpellChecker.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxSpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxSpellChecker.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxThemes.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxTreeList.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxTreeList.v17.2.resources.dll" />
+    <Content Include="bin\DevExpress.Web.ASPxTreeList.v17.2.xml" />
+    <Content Include="bin\DevExpress.Web.Resources.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.v17.2.dll" />
+    <Content Include="bin\DevExpress.Web.v17.2.xml" />
+    <Content Include="bin\DevExpress.XtraBars.v17.2.dll" />
+    <Content Include="bin\DevExpress.XtraBars.v17.2.xml" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.2.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.2.Web.dll" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.2.Web.xml" />
+    <Content Include="bin\DevExpress.XtraCharts.v17.2.xml" />
+    <Content Include="bin\DevExpress.XtraEditors.v17.2.dll" />
+    <Content Include="bin\DevExpress.XtraEditors.v17.2.xml" />
+    <Content Include="bin\DevExpress.XtraGauges.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.XtraGauges.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.XtraGrid.v17.2.dll" />
+    <Content Include="bin\DevExpress.XtraGrid.v17.2.xml" />
+    <Content Include="bin\DevExpress.XtraLayout.v17.2.dll" />
+    <Content Include="bin\DevExpress.XtraLayout.v17.2.xml" />
+    <Content Include="bin\DevExpress.XtraPrinting.v17.2.dll" />
+    <Content Include="bin\DevExpress.XtraPrinting.v17.2.xml" />
+    <Content Include="bin\DevExpress.XtraScheduler.v17.2.Core.dll" />
+    <Content Include="bin\DevExpress.XtraScheduler.v17.2.Core.xml" />
+    <Content Include="bin\DevExpress.XtraTreeList.v17.2.dll" />
+    <Content Include="bin\DevExpress.XtraTreeList.v17.2.xml" />
+    <Content Include="bin\de\DevExpress.Data.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Office.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.Pdf.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.PivotGrid.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.Printing.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.RichEdit.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.Sparkline.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.Utils.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.ASPxHtmlEditor.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.ASPxRichEdit.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.ASPxScheduler.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.ASPxSpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.ASPxTreeList.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.Resources.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraBars.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraCharts.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraEditors.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraGauges.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraGrid.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraLayout.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraPrinting.v17.2.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraScheduler.v17.2.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.XtraTreeList.v17.2.resources.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EnvDTE.dll" />
+    <Content Include="bin\EnvDTE80.dll" />
+    <Content Include="bin\es\DevExpress.Data.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Office.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.Pdf.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.PivotGrid.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.Printing.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.RichEdit.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.Sparkline.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.Utils.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.ASPxHtmlEditor.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.ASPxRichEdit.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.ASPxScheduler.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.ASPxSpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.ASPxTreeList.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.Resources.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraBars.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraCharts.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraEditors.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraGauges.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraGrid.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraLayout.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraPrinting.v17.2.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraScheduler.v17.2.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.XtraTreeList.v17.2.resources.dll" />
+    <Content Include="bin\FlexCel.dll" />
+    <Content Include="bin\ja\DevExpress.Data.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Office.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Pdf.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.PivotGrid.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Printing.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.RichEdit.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Sparkline.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Utils.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.ASPxHtmlEditor.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.ASPxRichEdit.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.ASPxScheduler.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.ASPxSpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.ASPxTreeList.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.Resources.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraBars.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraCharts.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraEditors.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraGauges.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraGrid.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraLayout.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraPrinting.v17.2.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraScheduler.v17.2.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.XtraTreeList.v17.2.resources.dll" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.MSXML.dll" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="bin\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.Windows.Design.Extensibility.dll" />
+    <Content Include="bin\Microsoft.Windows.Design.Extensibility.xml" />
+    <Content Include="bin\Microsoft.Windows.Design.Interaction.dll" />
+    <Content Include="bin\Microsoft.Windows.Design.Interaction.xml" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\MySql.Data.Entity.EF6.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\ru\DevExpress.Data.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Office.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Pdf.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.PivotGrid.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Printing.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.RichEdit.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Sparkline.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Utils.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.ASPxHtmlEditor.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.ASPxRichEdit.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.ASPxScheduler.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.ASPxSpellChecker.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.ASPxTreeList.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.Resources.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraBars.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraCharts.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraEditors.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraGauges.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraGrid.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraLayout.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraPrinting.v17.2.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraScheduler.v17.2.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.XtraTreeList.v17.2.resources.dll" />
+    <Content Include="bin\stdole.dll" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\VSLangProj.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrapTemplate\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrapTemplate\css\responsive.css" />
+    <Content Include="Content\bootstrapTemplate\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrapTemplate\js\jquery.min.js" />
+    <Content Include="Content\css\footer.css" />
+    <Content Include="Content\css\header.css" />
+    <Content Include="Content\css\login_register.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\images\aits1.jpg" />
+    <Content Include="Content\images\aits2.jpg" />
+    <Content Include="Content\images\aits3.jpg" />
+    <Content Include="Content\images\AITS_webbanner-2049x472 - 29Mar%281%29.jpg" />
+    <Content Include="Content\images\at_the_office.png" />
+    <Content Include="Content\images\background-la-gi.jpg" />
+    <Content Include="Content\images\bo-cong-thuong.png" />
+    <Content Include="Content\images\footer-logo-aits.png" />
+    <Content Include="Content\images\full-width-header.jpg" />
+    <Content Include="Content\images\girl_image.png" />
+    <Content Include="Content\images\iconly\Calling.png" />
+    <Content Include="Content\images\iconly\delete.png" />
+    <Content Include="Content\images\iconly\edit.png" />
+    <Content Include="Content\images\iconly\facebook.png" />
+    <Content Include="Content\images\iconly\google.png" />
+    <Content Include="Content\images\iconly\Location.png" />
+    <Content Include="Content\images\iconly\Message.png" />
+    <Content Include="Content\images\images.jfif" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logo_big.png" />
+    <Content Include="Content\images\sinh-nhat-bac-banner.jpg" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\SlideShow\css\style.css" />
+    <Content Include="Content\SlideShow\js\jssor.slider-27.5.0.min.js" />
+    <Content Include="Content\SlideShow\js\slide_tuyen.js" />
+    <Content Include="Global.asax" />
+    <Content Include="CheckPermission.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Main.master" />
+    <Content Include="Modules\Admin\AdminReviewBT.aspx" />
+    <Content Include="Modules\Admin\ChonBaiThi.aspx" />
+    <Content Include="Modules\Admin\ChonLoaiCauHoi.aspx" />
+    <Content Include="Modules\Admin\DanhSachBaiThiCauHoi_List.aspx" />
+    <Content Include="Modules\Admin\DsUvDaThi.aspx" />
+    <Content Include="Modules\Admin\TaoBaiThi.aspx" />
+    <Content Include="Modules\Admin\TaoCauHoiTL.aspx" />
+    <Content Include="Modules\Admin\TaoCauHoiTN.aspx" />
+    <Content Include="Modules\Admin\TaoDeBai.aspx" />
+    <Content Include="Modules\Admin\TaoDeBaiThi.aspx" />
+    <Content Include="Modules\Admin\ThemUngVien.aspx" />
+    <Content Include="Modules\Admin\XemUngVien.aspx" />
+    <Content Include="Modules\ChangePassword.aspx" />
+    <Content Include="Modules\DuAn_List.aspx" />
+    <Content Include="Modules\GanUser_Quyen.aspx" />
+    <Content Include="Modules\GanVaiTro.aspx" />
+    <Content Include="Modules\HopDuAn_Edit.aspx" />
+    <Content Include="Modules\HopDuAn_List.aspx" />
+    <Content Include="Modules\ImportFromExcelFile.aspx" />
+    <Content Include="Modules\MenuChucNang_Edit.aspx" />
+    <Content Include="Modules\MenuChucNang_List.aspx" />
+    <Content Include="Modules\NhiemVu_Edit.aspx" />
+    <Content Include="Modules\NhiemVu_List.aspx" />
+    <Content Include="Modules\RuiRo_Edit.aspx" />
+    <Content Include="Modules\RuiRo_List.aspx" />
+    <Content Include="Modules\TimeSheet_List.aspx" />
+    <Content Include="Modules\TimeSheet_Edit.aspx" />
+    <Content Include="Modules\TheoDoiCV_Edit.aspx" />
+    <Content Include="Modules\TheoDoiCV_List.aspx" />
+    <Content Include="Modules\QuanLyNhomQuyen.aspx" />
+    <Content Include="Modules\QuanLyVaiTro.aspx" />
+    <Content Include="Modules\GanQuyen.aspx" />
+    <Content Include="Modules\UngVien\LamBaiThi.aspx" />
+    <Content Include="Modules\UngVien\LamBaiThi_View.aspx" />
+    <Content Include="Modules\UngVien\ThongTinChiTietUV.aspx" />
+    <Content Include="Modules\UngVien\UVLogin.aspx" />
+    <Content Include="Modules\UngVien\UVReviewBaiThi.aspx" />
+    <Content Include="Modules\UngVien\UVReviewBT_List.aspx" />
+    <Content Include="Modules\UserDetails.aspx" />
+    <Content Include="Modules\UserList.aspx" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="SelectReports.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="Templates\css\atcl_style.css" />
+    <Content Include="Templates\css\blue.css" />
+    <Content Include="Templates\css\bootstrap-multiselect.css" />
+    <Content Include="Templates\css\bootstrap-theme.css" />
+    <Content Include="Templates\css\bootstrap-theme.min.css" />
+    <Content Include="Templates\css\bootstrap.css" />
+    <Content Include="Templates\css\bootstrap.min.css" />
+    <Content Include="Templates\css\calendar-jos.css" />
+    <Content Include="Templates\css\default.css" />
+    <Content Include="Templates\css\example.css" />
+    <Content Include="Templates\css\general.css" />
+    <Content Include="Templates\css\home.css" />
+    <Content Include="Templates\css\jv.moomenu.css" />
+    <Content Include="Templates\css\layout.css" />
+    <Content Include="Templates\css\offline.css" />
+    <Content Include="Templates\css\page.css" />
+    <Content Include="Templates\css\popup-alert.css" />
+    <Content Include="Templates\css\popup-dialog.css" />
+    <Content Include="Templates\css\style.css" />
+    <Content Include="Templates\css\styles.css" />
+    <Content Include="Templates\css\sweetalert.css" />
+    <Content Include="Templates\css\system xxxxxx.css" />
+    <Content Include="Templates\css\system.css" />
+    <Content Include="Templates\css\template.css" />
+    <Content Include="Templates\css\typo.css" />
+    <Content Include="Templates\images\AquaHeader.jpg" />
+    <Content Include="Templates\images\arrow.png" />
+    <Content Include="Templates\images\arrows.png" />
+    <Content Include="Templates\images\arrow_title.jpg" />
+    <Content Include="Templates\images\attach.gif" />
+    <Content Include="Templates\images\bar3.png" />
+    <Content Include="Templates\images\bg-CPanel.jpg" />
+    <Content Include="Templates\images\bg-menu2.gif" />
+    <Content Include="Templates\images\bg-tckt.jpg" />
+    <Content Include="Templates\images\bg.jpg" />
+    <Content Include="Templates\images\bg_page.jpg" />
+    <Content Include="Templates\images\BlackGlassHeader.jpg" />
+    <Content Include="Templates\images\close-icon.png" />
+    <Content Include="Templates\images\company_info.jpg" />
+    <Content Include="Templates\images\download.jpg" />
+    <Content Include="Templates\images\GlassHeader.jpg" />
+    <Content Include="Templates\images\hoi_vien.jpg" />
+    <Content Include="Templates\images\hoi_vien.png" />
+    <Content Include="Templates\images\hoi_vien_mat_sau.jpg" />
+    <Content Include="Templates\images\hoi_vien_trang.jpg" />
+    <Content Include="Templates\images\home_images.jpg" />
+    <Content Include="Templates\images\icon-active.jpg" />
+    <Content Include="Templates\images\icon-add - Copy.jpg" />
+    <Content Include="Templates\images\icon-add.jpg" />
+    <Content Include="Templates\images\icon-cancel - Copy.jpg" />
+    <Content Include="Templates\images\icon-cancel.jpg" />
+    <Content Include="Templates\images\icon-delete - Copy.jpg" />
+    <Content Include="Templates\images\icon-delete.jpg" />
+    <Content Include="Templates\images\icon-edit - Copy.jpg" />
+    <Content Include="Templates\images\icon-edit.jpg" />
+    <Content Include="Templates\images\icon-ok - Copy.jpg" />
+    <Content Include="Templates\images\icon-ok.jpg" />
+    <Content Include="Templates\images\library.jpg" />
+    <Content Include="Templates\images\logo.jpg" />
+    <Content Include="Templates\images\more_button.jpg" />
+    <Content Include="Templates\images\name_software.jpg" />
+    <Content Include="Templates\images\notices.jpg" />
+    <Content Include="Templates\images\PlasticBlueHeader.jpg" />
+    <Content Include="Templates\images\Preloader_2.gif" />
+    <Content Include="Templates\images\RedWineHeader.jpg" />
+    <Content Include="Templates\images\search-icon.png" />
+    <Content Include="Templates\images\slideshow1.jpg" />
+    <Content Include="Templates\js\accounting.js" />
+    <Content Include="Templates\js\accounting.min.js" />
+    <Content Include="Templates\js\activatables.js" />
+    <Content Include="Templates\js\ajax.js" />
+    <Content Include="Templates\js\atcl_lib.js" />
+    <Content Include="Templates\js\awesome_form.js" />
+    <Content Include="Templates\js\bootstrap-multiselect.js" />
+    <Content Include="Templates\js\bootstrap.js" />
+    <Content Include="Templates\js\bootstrap.min.js" />
+    <Content Include="Templates\js\calendar-setup.js" />
+    <Content Include="Templates\js\calendar.js" />
+    <Content Include="Templates\js\caption.js" />
+    <Content Include="Templates\js\jd.gallery.js" />
+    <Content Include="Templates\js\jd.gallery.transitions.js" />
+    <Content Include="Templates\js\joomla.javascript.js" />
+    <Content Include="Templates\js\jquery-1.10.2.min.js" />
+    <Content Include="Templates\js\jquery.formance.min.js" />
+    <Content Include="Templates\js\jquery.min.js" />
+    <Content Include="Templates\js\jv.moomenu.js" />
+    <Content Include="Templates\js\jv.script.js" />
+    <Content Include="Templates\js\lib_js.js" />
+    <Content Include="Templates\js\lib_waiting_load_page.js" />
+    <Content Include="Templates\js\loadPages.js" />
+    <Content Include="Templates\js\mootools.js" />
+    <Content Include="Templates\js\page.js" />
+    <Content Include="Templates\js\popup-alert.js" />
+    <Content Include="Templates\js\sweetalert-dev.js" />
+    <Content Include="Templates\Site.css" />
+    <Content Include="Templates\style.css" />
+    <Content Include="Templates\tabs.css" />
+    <Content Include="Templates\tab_show.css" />
+    <Content Include="Templates\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Templates\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Templates\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Templates\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Templates\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Templates\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Templates\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Templates\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Templates\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Templates\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Templates\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Templates\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Templates\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Templates\themes\base\jquery-ui.css" />
+    <Content Include="Templates\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Templates\themes\base\jquery.ui.all.css" />
+    <Content Include="Templates\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Templates\themes\base\jquery.ui.base.css" />
+    <Content Include="Templates\themes\base\jquery.ui.button.css" />
+    <Content Include="Templates\themes\base\jquery.ui.core.css" />
+    <Content Include="Templates\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Templates\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Templates\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Templates\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Templates\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Templates\themes\base\jquery.ui.slider.css" />
+    <Content Include="Templates\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Templates\themes\base\jquery.ui.theme.css" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Templates\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Templates\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Templates\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Test.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Root.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Commons\ATCL_Commons.cs" />
+    <Compile Include="Commons\CheckUserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commons\CommonsConst.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commons\CommonsFuncs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commons\CommonsQLNS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commons\CommonsReadFiles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commons\TreeObject.cs" />
+    <Compile Include="FontPage.Master.cs">
+      <DependentUpon>FontPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FontPage.Master.designer.cs">
+      <DependentUpon>FontPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPermission.aspx.cs">
+      <DependentUpon>CheckPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckPermission.aspx.designer.cs">
+      <DependentUpon>CheckPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main_UV.master.cs">
+      <DependentUpon>Main_UV.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main_UV.master.designer.cs">
+      <DependentUpon>Main_UV.master</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BAI_THI_CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BAI_THI_UNG_VIEN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CAU_HINH_BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CAU_HOI_MUC_DO.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHU_DE_BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DAP_AN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOAI_CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_SQL.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_SQL.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_SQL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model_SQL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model_SQL.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUC_DO_BAI_THI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MUC_DO_CAU_HOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NGUOI_DANH_GIA.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_BAO_CAO_CV.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_DANH_MUC.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_DS_TAI_LIEU.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_HE_THONG.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_HOP_DA.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_HOP_DONG.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_MENU.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_MENU_LOAI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_MENU_QUYEN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_NGUOI_DUNG.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_NGUOI_DUNG_PHONG_BAN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_NGUOI_DUNG_QUYEN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_NHIEM_VU.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_PHONG_BAN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_QUYEN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_QUYEN_RULE.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_RUI_RO.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_RULE.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_THEO_DOI_CV.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TBL_TIMESHEET.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UNG_VIEN.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UNG_VIEN_TRA_LOI.cs">
+      <DependentUpon>Model_SQL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Views\BAI_THI_VIEW.cs" />
+    <Compile Include="Models\Views\CAU_HINH_BAI_THI_VIEW.cs" />
+    <Compile Include="Models\Views\CAU_HOI_MUC_DO_VIEW.cs" />
+    <Compile Include="Models\Views\CAU_HOI_VIEW.cs" />
+    <Compile Include="Models\Views\TAO_BAI_THI_VIEW.cs" />
+    <Compile Include="Models\Views\TBL_BAO_CAO_CV_VIEW.cs" />
+    <Compile Include="Models\Views\TBL_HE_THONG_VIEW.cs" />
+    <Compile Include="Models\Views\TBL_HOP_DA_VIEW.cs" />
+    <Compile Include="Models\Views\TBL_NHIEM_VU_VIEW.cs" />
+    <Compile Include="Models\Views\TBL_RUI_RO_VIEW.cs" />
+    <Compile Include="Models\Views\TBL_THEO_DOI_CV_VIEW.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Views\TBL_TIMESHEET_VIEW.cs" />
+    <Compile Include="Models\Views\UNG_VIEN_VIEW.cs" />
+    <Compile Include="Modules\Admin\AdminReviewBT.aspx.cs">
+      <DependentUpon>AdminReviewBT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\AdminReviewBT.aspx.designer.cs">
+      <DependentUpon>AdminReviewBT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\ChonBaiThi.aspx.cs">
+      <DependentUpon>ChonBaiThi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\ChonBaiThi.aspx.designer.cs">
+      <DependentUpon>ChonBaiThi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.cs">
+      <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\ChonLoaiCauHoi.aspx.designer.cs">
+      <DependentUpon>ChonLoaiCauHoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\DanhSachBaiThiCauHoi_List.aspx.cs">
+      <DependentUpon>DanhSachBaiThiCauHoi_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\DanhSachBaiThiCauHoi_List.aspx.designer.cs">
+      <DependentUpon>DanhSachBaiThiCauHoi_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\DsUvDaThi.aspx.cs">
+      <DependentUpon>DsUvDaThi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\DsUvDaThi.aspx.designer.cs">
+      <DependentUpon>DsUvDaThi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoBaiThi.aspx.cs">
+      <DependentUpon>TaoBaiThi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoBaiThi.aspx.designer.cs">
+      <DependentUpon>TaoBaiThi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTL.aspx.cs">
+      <DependentUpon>TaoCauHoiTL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTL.aspx.designer.cs">
+      <DependentUpon>TaoCauHoiTL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTN.aspx.cs">
+      <DependentUpon>TaoCauHoiTN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoCauHoiTN.aspx.designer.cs">
+      <DependentUpon>TaoCauHoiTN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoDeBai.aspx.cs">
+      <DependentUpon>TaoDeBai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoDeBai.aspx.designer.cs">
+      <DependentUpon>TaoDeBai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoDeBaiThi.aspx.cs">
+      <DependentUpon>TaoDeBaiThi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\TaoDeBaiThi.aspx.designer.cs">
+      <DependentUpon>TaoDeBaiThi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\ThemUngVien.aspx.cs">
+      <DependentUpon>ThemUngVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\ThemUngVien.aspx.designer.cs">
+      <DependentUpon>ThemUngVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Admin\XemUngVien.aspx.cs">
+      <DependentUpon>XemUngVien.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Admin\XemUngVien.aspx.designer.cs">
+      <DependentUpon>XemUngVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DuAn_List.aspx.cs">
+      <DependentUpon>DuAn_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\DuAn_List.aspx.designer.cs">
+      <DependentUpon>DuAn_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GanUser_Quyen.aspx.cs">
+      <DependentUpon>GanUser_Quyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GanUser_Quyen.aspx.designer.cs">
+      <DependentUpon>GanUser_Quyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GanVaiTro.aspx.cs">
+      <DependentUpon>GanVaiTro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GanVaiTro.aspx.designer.cs">
+      <DependentUpon>GanVaiTro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HopDuAn_Edit.aspx.cs">
+      <DependentUpon>HopDuAn_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\HopDuAn_Edit.aspx.designer.cs">
+      <DependentUpon>HopDuAn_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\HopDuAn_List.aspx.cs">
+      <DependentUpon>HopDuAn_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\HopDuAn_List.aspx.designer.cs">
+      <DependentUpon>HopDuAn_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ImportFromExcelFile.aspx.cs">
+      <DependentUpon>ImportFromExcelFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ImportFromExcelFile.aspx.designer.cs">
+      <DependentUpon>ImportFromExcelFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MenuChucNang_Edit.aspx.cs">
+      <DependentUpon>MenuChucNang_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\MenuChucNang_Edit.aspx.designer.cs">
+      <DependentUpon>MenuChucNang_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MenuChucNang_List.aspx.cs">
+      <DependentUpon>MenuChucNang_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\MenuChucNang_List.aspx.designer.cs">
+      <DependentUpon>MenuChucNang_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NhiemVu_Edit.aspx.cs">
+      <DependentUpon>NhiemVu_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\NhiemVu_Edit.aspx.designer.cs">
+      <DependentUpon>NhiemVu_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NhiemVu_List.aspx.cs">
+      <DependentUpon>NhiemVu_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\NhiemVu_List.aspx.designer.cs">
+      <DependentUpon>NhiemVu_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RuiRo_Edit.aspx.cs">
+      <DependentUpon>RuiRo_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\RuiRo_Edit.aspx.designer.cs">
+      <DependentUpon>RuiRo_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RuiRo_List.aspx.cs">
+      <DependentUpon>RuiRo_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\RuiRo_List.aspx.designer.cs">
+      <DependentUpon>RuiRo_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TimeSheet_List.aspx.cs">
+      <DependentUpon>TimeSheet_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TimeSheet_List.aspx.designer.cs">
+      <DependentUpon>TimeSheet_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TimeSheet_Edit.aspx.cs">
+      <DependentUpon>TimeSheet_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TimeSheet_Edit.aspx.designer.cs">
+      <DependentUpon>TimeSheet_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TheoDoiCV_Edit.aspx.cs">
+      <DependentUpon>TheoDoiCV_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TheoDoiCV_Edit.aspx.designer.cs">
+      <DependentUpon>TheoDoiCV_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\TheoDoiCV_List.aspx.cs">
+      <DependentUpon>TheoDoiCV_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\TheoDoiCV_List.aspx.designer.cs">
+      <DependentUpon>TheoDoiCV_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\QuanLyNhomQuyen.aspx.cs">
+      <DependentUpon>QuanLyNhomQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\QuanLyNhomQuyen.aspx.designer.cs">
+      <DependentUpon>QuanLyNhomQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\QuanLyVaiTro.aspx.cs">
+      <DependentUpon>QuanLyVaiTro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\QuanLyVaiTro.aspx.designer.cs">
+      <DependentUpon>QuanLyVaiTro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GanQuyen.aspx.cs">
+      <DependentUpon>GanQuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\GanQuyen.aspx.designer.cs">
+      <DependentUpon>GanQuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UngVien\LamBaiThi.aspx.cs">
+      <DependentUpon>LamBaiThi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UngVien\LamBaiThi.aspx.designer.cs">
+      <DependentUpon>LamBaiThi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UngVien\LamBaiThi_View.aspx.cs">
+      <DependentUpon>LamBaiThi_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UngVien\LamBaiThi_View.aspx.designer.cs">
+      <DependentUpon>LamBaiThi_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UngVien\ThongTinChiTietUV.aspx.cs">
+      <DependentUpon>ThongTinChiTietUV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UngVien\ThongTinChiTietUV.aspx.designer.cs">
+      <DependentUpon>ThongTinChiTietUV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UngVien\UVLogin.aspx.cs">
+      <DependentUpon>UVLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UngVien\UVLogin.aspx.designer.cs">
+      <DependentUpon>UVLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UngVien\UVReviewBaiThi.aspx.cs">
+      <DependentUpon>UVReviewBaiThi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UngVien\UVReviewBaiThi.aspx.designer.cs">
+      <DependentUpon>UVReviewBaiThi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UngVien\UVReviewBT_List.aspx.cs">
+      <DependentUpon>UVReviewBT_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UngVien\UVReviewBT_List.aspx.designer.cs">
+      <DependentUpon>UVReviewBT_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Root.master.cs">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.master.designer.cs">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="RootAITS.master.cs">
+      <DependentUpon>RootAITS.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RootAITS.master.designer.cs">
+      <DependentUpon>RootAITS.master</DependentUpon>
+    </Compile>
+    <Compile Include="Root_UV.master.cs">
+      <DependentUpon>Root_UV.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root_UV.master.designer.cs">
+      <DependentUpon>Root_UV.master</DependentUpon>
+    </Compile>
+    <Compile Include="SelectReports.aspx.cs">
+      <DependentUpon>SelectReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectReports.aspx.designer.cs">
+      <DependentUpon>SelectReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FontPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HCS\" />
+    <Folder Include="UploadFiles\DU_AN\" />
+    <Folder Include="UploadFiles\NHIEM_VU\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Models\Model_SQL.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model_SQL.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model_SQL.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_SQL.edmx</DependentUpon>
+      <LastGenOutput>Model_SQL.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model_SQL.edmx.diagram">
+      <DependentUpon>Model_SQL.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Model_SQL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model_SQL.edmx</DependentUpon>
+      <LastGenOutput>Model_SQL.cs</LastGenOutput>
+    </Content>
+    <Content Include="Main_UV.master" />
+    <Content Include="bin\CPanel.dll.config" />
+    <None Include="Properties\PublishProfiles\CPanel.pubxml" />
+    <Content Include="RootAITS.master" />
+    <Content Include="Root_UV.master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1999/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

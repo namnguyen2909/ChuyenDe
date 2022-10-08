@@ -1,0 +1,12 @@
+Build
+build
+node_modules
+*/build/
+*/Build/
+/**/*.suo
+/**/*.user
+/**/*.dbmdl
+/**/*.vs
+/**/bin
+/**/obj
+/**/packages

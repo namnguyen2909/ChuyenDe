@@ -1,0 +1,95 @@
+html,
+body {
+    padding: 0%;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height: 100%;
+    font-family: "Montserrat";
+}
+
+/* #body-content {
+    background-color: #dba410;
+    height: 10px;
+} */
+#main-page {
+    height: 100%;
+}
+/* Main content */
+.main-content > .div-color {
+    background-color: #dba410;
+    height: 10px;
+}
+/* End main content */
+.banner_welcome {
+    /* padding: 219px 0; */
+    background: url("/images/girl_image.png") no-repeat;
+    background-color: #dbecf1;
+    width: 100%;
+    height: 725px;
+}
+/* Banner */
+
+.banner_text {
+    /* padding: 219px 0; */
+    margin-top: 3rem;
+}
+.banner_text > h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+
+    color: #007c9d;
+}
+.banner_text > h1 > span {
+    color: #dba410;
+    margin: 0 1rem;
+}
+.banner_text > h3 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+}
+.banner_text > p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.btn_ung-tuyen {
+    height: 53px;
+    width: 345px;
+    border-radius: 36px;
+    color: #01abd9;
+    font-size: 18px;
+    font-weight: 700;
+
+    /* position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    border: 1px solid #007c9d;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+.btn_ung-tuyen {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* identical to box height */
+    margin-top: 8px;
+    text-align: center;
+}
+.btn_ung-tuyen:hover {
+    background: #007c9d;
+    border: 1px solid #007c9d;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+/* End banner */

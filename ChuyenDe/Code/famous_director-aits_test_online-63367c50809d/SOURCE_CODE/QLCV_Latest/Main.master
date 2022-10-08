@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/RootAITS.master" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="CPanel.MainMaster" %>
+<%-- DXCOMMENT: Page Main.master is a master page that contains central area layout --%>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- BEGIN: Jquery for All of Format (Interger, Date, Email, Card Number, ... -->
+    <script src="/Templates/js/jquery.formance.min.js"></script>
+    <script src="/Templates/js/awesome_form.js"></script>
+    <!-- END: Jquery for All of Format (Interger, Date, Email, Card Number, ... -->
+
+    <!-- BEGIN: Jquery for Accounting Format (Currency Format) -->
+    <script type="text/javascript" src="/Templates/js/accounting.min.js"></script>
+    <!-- END: Jquery for Accounting Format (Currency Format) -->
+
+
+
+    <!--<script type="text/javascript" src="/Templates/js/jd.gallery.js"></script>-->
+    <!--<script type="text/javascript" src="/Templates/js/jd.gallery.transitions.js"></script>-->
+    <script type="text/javascript" src="/Templates/js/sweetalert-dev.js"></script>
+    <script type="text/javascript" src="/Templates/js/lib_waiting_load_page.js"></script>
+
+
+
+
+
+    <!--<script type="text/javascript" src="/Templates/js/jv.moomenu.js"></script>-->
+
+
+    <link rel="stylesheet" type="text/css" href="/Templates/style.css" />
+    <link rel="stylesheet" type="text/css" href="/Templates/Site.css" />
+    <link href="/Templates/css/atcl_style.css" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="/Templates/css/system.css" type="text/css" />
+    <link rel="stylesheet" href="/Templates/css/general.css" type="text/css" />
+
+    <link type="text/css" rel="stylesheet" media="screen" href="/Templates/css/home.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="/Templates/css/layout.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="/Templates/css/style.css" />
+    
+    <link rel="stylesheet" href="/Templates/css/default.css" type="text/css" />
+    <link rel="stylesheet" href="/Templates/css/template.css" type="text/css" />
+    <link rel="stylesheet" href="/Templates/css/typo.css" type="text/css" />
+    <link rel="stylesheet" href="/Templates/css/blue.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="/Templates/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/Templates/css/calendar-jos.css" type="text/css" title="green" media="all" />
+    <link rel="stylesheet" href="/Templates/css/jv.moomenu.css" type="text/css" />
+    <link rel="stylesheet" href="/Templates/css/sweetalert.css" type="text/css" />
+    <link rel="stylesheet" href="/Templates/css/jvslideshow.php" type="text/css" />
+    <script type="text/javascript" src="/Templates/js/lib_js.js"></script>
+
+    
+
+    <link href="/Templates/css/bootstrap-multiselect.css" rel="stylesheet" />
+    <script src="/Templates/js/bootstrap-multiselect.js"></script>
+
+    <!--BEGIN: Menus-->
+    
+    <div id="jv-userwrap1" class="clearfix">
+        <div class="jv-wrapper">
+
+            <!--MENU-->
+            <div class="container" id="jv-userwrap1-inner-logo">
+                <img src="/Templates/images/slideshow1.jpg" border="0">
+            </div>
+            <div id="jv-userwrap1" class="clearfix">
+                <div class="jv-wrapper">
+                    <div id="jv-userwrap1-inner-logo">
+                    </div>
+                    <div id="jv-userwrap1-inner">
+                        <div id="jv-mainmenu-inner" class="layout-full">
+                            <div class="menusys_moo">
+                                <asp:Label ID="lbMenus" runat="server"></asp:Label>
+                                <div class="dropdown" style="float:right; margin-top:-4.5%; margin-right:5%">
+                                        <button class="btn btn-primary dropdown-toggle" style="background-color:#094e62; border-color:white" data-toggle="dropdown">
+                                          <i class="fas fa-user"></i>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                          <asp:LinkButton ID="LinkButton2" runat="server" CssClass="color" OnClick="btnChangePassword_Click" Text="Đổi mật khẩu"></asp:LinkButton>
+                                            <br />
+                                           <asp:LinkButton ID="LinkButton1" runat="server" OnClick="btnLogout_Click" CssClass="color" Text="Thoát" ></asp:LinkButton>
+                                        </div>
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="display:none">
+        <asp:Label ID="txtFullName" runat="server"></asp:Label>; &nbsp;&nbsp;                                    
+                                    Đơn vị: 
+                                    <asp:DropDownList ID="drpDepartments" AutoPostBack="true" CssClass="form-control element_tab_css" runat="server"></asp:DropDownList>
+                                        <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Thoát"></asp:LinkButton>
+                                        | 
+                                    <asp:LinkButton ID="btnChangePassword" runat="server" OnClick="btnChangePassword_Click" Text="Đổi Password"></asp:LinkButton>
+
+    </div>
+    <!--END: Menus-->
+    
+
+    <div class="container" style="margin-left:0px;margin-right:0px;width:100%">
+        <dx:SplitterContentControl>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </dx:SplitterContentControl>
+    
+    
+        <!-------------------------------BEGIN: display Message Box-------------------------------------------------------->
+        <div id="DIV_MESSAGE" visible="false" runat="server">
+            <div  class="pop_up_background_css"></div>
+            <div class="pop_up_info_css pop_up_message_css" runat="server">
+                <asp:Button ID="btlClosePopUp" OnClick="btlClosePopUp_Click" Text="X" CssClass="btn btn-danger close_css" runat="server" />
+                <span class="message_box_css"><asp:Literal ID="ltMessageContent" runat="server"></asp:Literal></span>
+            </div>
+        </div>          
+      
+        <!-------------------------------END: display Message Box-------------------------------------------------------->
+
+        <!-------------------------------BEGIN: display attachments-------------------------------------------------------->
+
+        <div id="DIV_VIEW_FILE_POP_UP" visible="false" runat="server">
+            <div  class="pop_up_background_css"></div>
+            <div class="pop_up_info_css pop_up_file_css" runat="server">
+                <asp:Button ID="btlClosePopUp_ViewFile" OnClick="btlClosePopUp_ViewFile_Click" Text="X" CssClass="btn btn-danger close_css" runat="server" />
+                 <asp:Literal ID="ltFileDisplay" runat="server"></asp:Literal>
+            </div>
+        </div>          
+        <!---------------------------------END: display attachments-------------------------------------------------------->
+
+        <!---------------------------------BEGIN: hidden tag--------------------------------------------------------------->
+        <div class="hidden_css">
+            <asp:TextBox ID="txtURL_ToRedirect" runat="server"></asp:TextBox>                    
+            <asp:TextBox ID="txtFileID" runat="server"></asp:TextBox>        
+            <asp:Button ID="btnViewFile" OnClick="btnViewFile_Click" Text="View File" runat="server" />
+        </div>
+        <!---------------------------------END: hidden tag----------------------------------------------------------------->
+    </div>
+    <style>
+        .color{
+            color: black !important;
+        }
+    </style>
+    <script>
+        function viewFile(intID) {
+            $("#<%=txtFileID.ClientID%>").val(intID);
+            __doPostBack("<%= btnViewFile.UniqueID %>", "OnClick");
+        }
+    </script>
+</asp:Content>

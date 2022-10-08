@@ -1,0 +1,272 @@
+<?xml version="1.0" standalone="yes"?>
+<Titles>
+  <TITLE_PAGE_ATCL>Phần mềm Kiểm tra trực tuyến</TITLE_PAGE_ATCL>
+  <TITLE_PAGE_THEO_DOI_CONG_VIEC>Danh sách nhắc việc</TITLE_PAGE_THEO_DOI_CONG_VIEC>
+  <TITLE_PAGE_THONG_TIN_NHAC_VIEC>Thông tin nhắc việc</TITLE_PAGE_THONG_TIN_NHAC_VIEC>
+  <TITLE_BAO_CAO_CONG_VIEC>Danh sách Báo cáo công việc</TITLE_BAO_CAO_CONG_VIEC>
+  <TITLE_PAGE_THEO_DOI_RUI_RO>Quản lý rủi ro</TITLE_PAGE_THEO_DOI_RUI_RO>
+  <TITLE_PAGE_QUAN_LY_DU_AN>Quản lý dự án</TITLE_PAGE_QUAN_LY_DU_AN>
+  <TITLE_PAGE_KE_HOACH_TRIEN_KHAI>Kế hoạch triển khai</TITLE_PAGE_KE_HOACH_TRIEN_KHAI>
+
+  <MSG_NHAP_TEN_CONG_VIEC>Hãy nhập Tên công việc</MSG_NHAP_TEN_CONG_VIEC>
+  <MSG_HAY_NHAP_THONG_TIN_CONG_VIEC>Hãy nhập thông tin về công việc</MSG_HAY_NHAP_THONG_TIN_CONG_VIEC>
+  <MSG_NHAP_MO_TA_CHO_CONG_VIEC_O_DONG_THU>Hãy nhập Mô tả chi tiết công việc</MSG_NHAP_MO_TA_CHO_CONG_VIEC_O_DONG_THU>
+  <MSG_CHON_LOAI_CONG_VIEC_O_DONG_THU>Hãy chọn Loại công việ</MSG_CHON_LOAI_CONG_VIEC_O_DONG_THU>
+  <MSG_NHAP_THOI_GIAN_O_DONG_THU>Hãy nhập Thời gian ở dòng thứ</MSG_NHAP_THOI_GIAN_O_DONG_THU>
+  <MSG_NHAP_SAI_FORMAT_THOI_GIAN_O_DONG_THU>Sai Format về Thời lượng</MSG_NHAP_SAI_FORMAT_THOI_GIAN_O_DONG_THU>
+  <MSG_BAN_CO_CHAC_CHAN_XOA_KHONG>Bạn có chắc chắn xóa không?</MSG_BAN_CO_CHAC_CHAN_XOA_KHONG>
+  <MSG_CHON_NGAY_KET_THUC>Hãy chọn Ngày kết thúc</MSG_CHON_NGAY_KET_THUC>
+  <MSG_CHON_NGUOI_CHU_TRI>Hãy chọn Người chủ trì</MSG_CHON_NGUOI_CHU_TRI>
+  <MSG_NHAP_MA_RUI_RO>Hãy nhập Mã rủi ro</MSG_NHAP_MA_RUI_RO>
+  <MSG_NHAP_NOI_DUNG_MODULE>Hãy nhập Nội dung/Hệ thống</MSG_NHAP_NOI_DUNG_MODULE>
+
+  <XEM>Xem</XEM>
+  <XOA>Xóa</XOA>
+  <TAO_MOI>Tạo mới</TAO_MOI>
+
+  <KIEN_NGHI>Kiến nghị</KIEN_NGHI>
+  <TRACH_NHIEM_XU_LY>Trách nhiệm xử lý</TRACH_NHIEM_XU_LY>
+  <KHACH_HANG>Khách hàng</KHACH_HANG>
+  <DOI_TAC>Đối tác</DOI_TAC>
+  <GIAI_PHAP>Giải pháp</GIAI_PHAP>
+  <GHI_CHU>Ghi chú</GHI_CHU>
+  <NGAY_PHAT_SINH>Ngày phát sinh</NGAY_PHAT_SINH>
+  <NOI_DUNG_MODULE>Nội dung/Module</NOI_DUNG_MODULE>
+  <TU_NGAY>Từ ngày</TU_NGAY>
+  <DEN_NGAY>Đến ngày</DEN_NGAY>
+
+  <TEN_CONG_VIEC>Tên công việc</TEN_CONG_VIEC>
+  <TEN_HE_THONG>Tên hệ thống</TEN_HE_THONG>
+  <PLHD>PLHĐ</PLHD>
+  <NGUOI_PHOI_HOP>Người phối hợp</NGUOI_PHOI_HOP>
+  <NGUOI_CHU_TRI>Người chủ trì</NGUOI_CHU_TRI>
+  <NGAY_BAT_DAU>Ngày bắt đầu</NGAY_BAT_DAU>
+  <NGAY_BAT_DAU_LAM>Ngày bắt đầu làm</NGAY_BAT_DAU_LAM>
+  <NGAY_KET_THUC>Ngày kết thúc</NGAY_KET_THUC>
+  <NGAY_NGHIEM_THU_TT>Ngày nghiệm thu TT</NGAY_NGHIEM_THU_TT>
+  <KET_QUA_CV>Kết quả</KET_QUA_CV>
+  <MO_TA>Mô tả</MO_TA>
+  <TONG_THOI_GIAN>
+    Tổng thời gian <i>(Giờ)</i>
+  </TONG_THOI_GIAN>
+  <LOAI_CONG_VIEC>Loại công việc</LOAI_CONG_VIEC>
+  <MO_TA_CHI_TIET>Mô tả chi tiết</MO_TA_CHI_TIET>
+  <THOI_LUONG>
+    Thời lượng <i>(Giờ)</i>
+  </THOI_LUONG>
+  <KHO_KHAN_KIEN_NGHI>Khó khăn / Kiến nghị</KHO_KHAN_KIEN_NGHI>
+  <SANG_KIEN>Sáng kiến</SANG_KIEN>
+  <BAO_CAO_CONG_VIEC>Báo cáo công việc</BAO_CAO_CONG_VIEC>
+  <NOI_DUNG_CONG_VIEC>Nội dung công việc</NOI_DUNG_CONG_VIEC>
+  <TEN_NGUOI_BC>Người báo cáo</TEN_NGUOI_BC>
+
+  <TEN_DU_AN>Tên dự án</TEN_DU_AN>
+  <MA>Mã</MA>
+  <HANH_DONG>Hành động</HANH_DONG>
+
+	<TABLE_QT_MENUS>TBL_MENU</TABLE_QT_MENUS>
+	<TABLE_KPI_CHI_TIEU>TBL_KPI_CHI_TIEU</TABLE_KPI_CHI_TIEU>
+
+  <!--****************************Begin: URL*********************************-->
+  <URL_LOGIN>/SignIn.aspx</URL_LOGIN>
+  <URL_HOME_PAGE>/HomePage.aspx</URL_HOME_PAGE>
+  <URL_OPEN_REPORT_STAFF>/Modules/Reports/OpenReports/Index.aspx</URL_OPEN_REPORT_STAFF>
+  <URL_OPEN_REPORT_DEPARTMENT>/Modules/Reports/OpenReports/OpenReports_Departments</URL_OPEN_REPORT_DEPARTMENT>
+  <URL_OPEN_REPORT_SAFETY>/Modules/Reports/OpenReports/OpenReports_Safety.aspx</URL_OPEN_REPORT_SAFETY>
+  <URL_OPEN_REPORT_CEO>/Modules/Reports/OpenReports/OpenReports_CEO.aspx</URL_OPEN_REPORT_CEO>
+  <URL_OPEN_REPORT_EDIT>/Modules/Reports/OpenReports/OpenReport_Edit</URL_OPEN_REPORT_EDIT>
+  <URL_SELECT_REPORTS>/SelectReports</URL_SELECT_REPORTS>
+  <URL_TARGET_REPORTS_EDIT>/Modules/Reports/TargetReports/TargetReports_Edit</URL_TARGET_REPORTS_EDIT>
+
+  <URL_THEO_DOI_CV_LIST>/Modules/TheoDoiCV_List</URL_THEO_DOI_CV_LIST>
+  <URL_THEO_DOI_CV_EDIT>/Modules/TheoDoiCV_Edit</URL_THEO_DOI_CV_EDIT>
+  <URL_TIMESHEET_LIST>/Modules/TimeSheet_List</URL_TIMESHEET_LIST>
+  <URL_TIMESHEET_EDIT>/Modules/TimeSheet_Edit</URL_TIMESHEET_EDIT>
+  <URL_HE_THONG_LIST>/Modules/HeThong_List</URL_HE_THONG_LIST>
+  <URL_HE_THONG_EDIT>/Modules/HeThong_Edit</URL_HE_THONG_EDIT>
+  <URL_NHIEM_VU_LIST>/Modules/NhiemVu_List</URL_NHIEM_VU_LIST>
+  <URL_NHIEM_VU_EDIT>/Modules/NhiemVu_Edit</URL_NHIEM_VU_EDIT>
+  <URL_RUI_RO_LIST>/Modules/RuiRo_List</URL_RUI_RO_LIST>
+  <URL_RUI_RO_EDIT>/Modules/RuiRo_Edit</URL_RUI_RO_EDIT>
+
+
+  <URL_DU_AN_LIST>/Modules/DuAn_List</URL_DU_AN_LIST>
+  <URL_DU_AN_EDIT>/Modules/DuAn_Edit</URL_DU_AN_EDIT>
+  <URL_HOP_DA_LIST>/Modules/HopDuAn_List</URL_HOP_DA_LIST>
+  <URL_HOP_DA_EDIT>/Modules/HopDuAn_Edit</URL_HOP_DA_EDIT>
+
+  <!--****************************End: URL*********************************-->
+
+
+  <TYPE_OF_PAGE>Types of page</TYPE_OF_PAGE>
+  <SECTIONS>Sections</SECTIONS>
+  <CATEGORIES>Categories</CATEGORIES>
+
+  <!--****************************Begin: TUYENDV*********************************-->
+  <PAGE_TINH_THANH_PHO>Danh sách các Tỉnh và Thành phố</PAGE_TINH_THANH_PHO>
+  <PAGE_CHUC_VU>Danh sách chức vụ</PAGE_CHUC_VU>
+
+  <MSG_UPDATE_SUCCESFULLY>Cập nhật thành công</MSG_UPDATE_SUCCESFULLY>
+  <MSG_INSERT_SUCCESFULLY>Tạo mới thành công</MSG_INSERT_SUCCESFULLY>
+  <MSG_DELETE_SUCCESFULLY>Xóa thành công</MSG_DELETE_SUCCESFULLY>
+  <MSG_SELECT_CHILD_ITEM>Hãy chọn danh mục con</MSG_SELECT_CHILD_ITEM>
+
+  <MSG_HO_TEN>Hãy nhập Họ tên</MSG_HO_TEN>
+  <MSG_CHUC_VU>Hãy chọn Chức vụ</MSG_CHUC_VU>
+  <MSG_CAU_LAC_BO>Hãy chọn Câu lạc bộ</MSG_CAU_LAC_BO>
+  <MSG_NHAP_TEN_TINH_TP>Hãy nhập tên Tỉnh, thành phố</MSG_NHAP_TEN_TINH_TP>
+  <MSG_NHAP_TEN_CHU_VU>Hãy nhập tên chức vụ</MSG_NHAP_TEN_CHU_VU>
+  <MSG_THAO_TAC_KHONG_CHO_PHEP_VI_CHUA_BC>Thao tác không cho phép vì Bộ phận này chưa làm báo cáo</MSG_THAO_TAC_KHONG_CHO_PHEP_VI_CHUA_BC>
+  <MSG_DA_TON_TAI_BC_VOI_NGAY_BC>Đã tồn tại báo cáo với ngày đã chọn. Hãy chọn ngày báo cáo khác.</MSG_DA_TON_TAI_BC_VOI_NGAY_BC>
+
+  <MSG_NHAP_TEN_TRANG_THAI>Hãy nhập tên trạng thái</MSG_NHAP_TEN_TRANG_THAI>
+  <MSG_HAVE_NO_PERMISSION>You don't have permission for this item</MSG_HAVE_NO_PERMISSION>
+
+
+
+
+
+  <LIST_OF_MENU>Danh sách Menu</LIST_OF_MENU>
+  <LIST_OF_RULE>Danh sách Rules</LIST_OF_RULE>
+  <RULE_MANAGEMENT>Danh sách quyền</RULE_MANAGEMENT>
+  <RULE_NAME>Tên quyền</RULE_NAME>
+  <DESCRIPTION>Mô tả</DESCRIPTION>
+  <MENU_TYPE>Kiểu Menu</MENU_TYPE>
+
+  <ABILITY_MANAGEMENT>Danh sách Khả năng</ABILITY_MANAGEMENT>
+  <LEVEL_MANAGEMENT>Danh sách mức độ</LEVEL_MANAGEMENT>
+  <TAGET_MANAGEMENT>Danh sách mục tiêu</TAGET_MANAGEMENT>
+  <TAGET_CONTROL_MANAGEMENT>Danh sách Mục tiêu kiểm soát</TAGET_CONTROL_MANAGEMENT>
+  <RESOURCE_MANAGEMENT>Danh sách Nguồn phát hiện</RESOURCE_MANAGEMENT>
+  <REASON_MANAGEMENT>Danh sách Nguyên nhân</REASON_MANAGEMENT>
+  <INPUT_EXCEL>Import Employee From Excel</INPUT_EXCEL>
+
+  <MENU_MANAGEMENT>Quản lý Menu</MENU_MANAGEMENT>
+  <MENU_DETAILS>Chi tiết Menu</MENU_DETAILS>
+  <MENU_LIST>Danh sách Menu</MENU_LIST>
+  <MENU_TYPE_LIST>Danh sách kiểu Menu</MENU_TYPE_LIST>
+  <MENU_URL>URL</MENU_URL>
+  <MENU_STT>Thứ tự</MENU_STT>
+  <TITLE>Tiêu đề</TITLE>
+  <CODE>Code</CODE>
+  <USER_STATUS>Trạng thái người dùng</USER_STATUS>
+  <USER_LIST>Danh sách người dùng</USER_LIST>
+
+  <MENU_PARENT>Parent Menu</MENU_PARENT>
+
+  <RULE>Chọn quyền</RULE>
+  <SECTION_TITLE>Name</SECTION_TITLE>
+  <PUBLISHED>Status</PUBLISHED>
+  <ORDERING>Order</ORDERING>
+
+  <TITLE_ICON>.</TITLE_ICON>
+
+  <BUTTON_CANCEL>Hủy</BUTTON_CANCEL>
+  <BUTTON_EDIT>Sửa</BUTTON_EDIT>
+  <BUTTON_CANCEL_EN>Cancel</BUTTON_CANCEL_EN>
+  <BUTTON_DO_CONTROL>Yêu cầu thực hiện KS</BUTTON_DO_CONTROL>
+  <BUTTON_DO_NEW_CONTROL>Yêu cầu thực hiện KS mới</BUTTON_DO_NEW_CONTROL>
+  <BUTTON_BACK>Quay lại</BUTTON_BACK>
+  <BUTTON_TAO_CONG_VIEC>Tạo mới công việc</BUTTON_TAO_CONG_VIEC>
+
+  <BUTTON_VERIFY_REPORT>Xác nhận đã khắc phục xong</BUTTON_VERIFY_REPORT>
+  <BUTTON_SUBMIT>Lưu</BUTTON_SUBMIT>
+  <BUTTON_SUBMIT_EN>Save</BUTTON_SUBMIT_EN>
+  <BUTTON_SEND_TO_SAFETY>Gửi tới BP QL ATCL</BUTTON_SEND_TO_SAFETY>
+  <BUTTON_FINISED_LT_RECOVERY>Đã khắc phục dài hạn xong</BUTTON_FINISED_LT_RECOVERY>
+  <BUTTON_LONG_TERM_RECOVERING>Yêu cầu hành động khắc phục dài hạn</BUTTON_LONG_TERM_RECOVERING>
+  <BUTTON_SEND_REPORT>Gửi báo cáo</BUTTON_SEND_REPORT>
+  <BUTTON_CREATE>Tạo mới</BUTTON_CREATE>
+  <BUTTON_EXPORT>Xuất file</BUTTON_EXPORT>
+  <BUTTON_PREVIEW>Xem trước</BUTTON_PREVIEW>
+  <BUTTON_APPROVE>Chốt</BUTTON_APPROVE>
+  <BUTTON_SEARCH>Tìm kiếm</BUTTON_SEARCH>
+  <BUTTON_EDIT_AGAIN_EN>Report needs editing</BUTTON_EDIT_AGAIN_EN>
+
+  <BUTTON_SEND_RESULT_OF_PROCESSING>Gửi kết quả xử lý</BUTTON_SEND_RESULT_OF_PROCESSING>
+
+  <BUTTON_EXPORT_FILE>Xuất file</BUTTON_EXPORT_FILE>
+  <BUTTON_EXPORT_FILE_EN>Export file</BUTTON_EXPORT_FILE_EN>
+
+  <BUTTON_CREATE_EN>Create</BUTTON_CREATE_EN>
+  <BUTTON_APPROVAL_EN>Approve</BUTTON_APPROVAL_EN>
+  <BUTTON_APPROVAL>Phê duyệt</BUTTON_APPROVAL>
+  <BUTTON_UPDATE>Cập nhật</BUTTON_UPDATE>
+
+  <BUTTON_SEARCH_EN>Search</BUTTON_SEARCH_EN>
+  <BUTTON_EDIT_AGAIN>Yêu cầu chỉnh sửa</BUTTON_EDIT_AGAIN>
+  <BUTTON_SEND_TO_APPROVAL>Gửi xin phê duyệt</BUTTON_SEND_TO_APPROVAL>
+  <BUTTON_NEXT>Tiếp theo</BUTTON_NEXT>
+
+  <BUTTON_DONG_BAO_CAO>Đóng báo cáo</BUTTON_DONG_BAO_CAO>
+  <BUTTON_LAP_BC_KPH>Lập BC KPH</BUTTON_LAP_BC_KPH>
+
+  <BUTTON_REGISTER_TARGET>Đăng ký mục tiêu</BUTTON_REGISTER_TARGET>
+  <BUTTON_REPORT_TARGET>Báo cáo kết quả thực hiện quý</BUTTON_REPORT_TARGET>
+  <!--****************************End: TUYENDV*********************************-->
+
+  <!--****************************Begin: VALUE CONST*********************************-->
+  <BLANK_ITEM_VALUE>BLANK_ITEM</BLANK_ITEM_VALUE>
+  <BLANK_ITEM_TITLE>............Ấn để chọn...........</BLANK_ITEM_TITLE>
+
+  <BLANK_PARENT_ITEM_VALUE>BLANK_PARENT_ITEM</BLANK_PARENT_ITEM_VALUE>
+
+  <STATUS_ACTIVE_TITLE>Hoạt động</STATUS_ACTIVE_TITLE>
+  <STATUS_ACTIVE_VALUE>1</STATUS_ACTIVE_VALUE>
+
+  <STATUS_INACTIVE_TITLE>Không hoạt động</STATUS_INACTIVE_TITLE>
+  <STATUS_INACTIVE_VALUE>0</STATUS_INACTIVE_VALUE>
+
+  <!--****************************End: VALUE CONST*********************************-->
+
+	
+	
+	<!--****************************TEST_ONLINE*********************************-->
+	<DANH_SACH_BAI_THI>Danh sách bài thi</DANH_SACH_BAI_THI>
+	<STT>STT</STT>
+	<TEN_BAI_THI>Tên Bài Thi</TEN_BAI_THI>
+	<CHU_DE>Chủ Đề</CHU_DE>
+	<MUC_DO>Mức Độ</MUC_DO>
+	<TIME>Thời Gian</TIME>
+	<NGAY_TAO>Ngày Tạo</NGAY_TAO>
+	<HANH_DONG_BT>Hành Động</HANH_DONG_BT>
+	<TEN_BAI_THI>Tên bài thi:</TEN_BAI_THI>
+	<CHON_CAU_HOI>Chọn câu hỏi</CHON_CAU_HOI>
+	<CAU_HOI>Câu hỏi</CAU_HOI>
+	<DAP_AN>Đáp án</DAP_AN>
+	<HANH_DONG>Hành động</HANH_DONG>
+	<LOAI_CAU_HOI>Loại câu hỏi</LOAI_CAU_HOI>
+	<!--<SHEET_NAME>Tên sheet</SHEET_NAME>-->
+	<!--****************************URL TEST_ONLINE*********************************-->
+	<URL_TAO_DE_BAI_THI>/Modules/Admin/TaoDeBaiThi</URL_TAO_DE_BAI_THI>
+	<URL_TAO_BAI_THI>/Modules/Admin/TaoBaiThi</URL_TAO_BAI_THI>
+	<URL_DANH_SACH_BAI_THI_CAU_HOI_LIST>/Modules/Admin/DanhSachBaiThiCauHoi_List</URL_DANH_SACH_BAI_THI_CAU_HOI_LIST>
+	<!--****************************MSG TEST_ONLINE*********************************-->
+	<MSG_NHAP_TEN_BAI_THI>Hãy nhập tên bài thi!</MSG_NHAP_TEN_BAI_THI>
+	<MSG_CHON_CHU_DE_BAI_THI>Hãy chọn chủ đề bài thi!</MSG_CHON_CHU_DE_BAI_THI>
+	<MSG_CHON_MUC_DO_BAI_THI>Hãy chọn mức độ bài thi!</MSG_CHON_MUC_DO_BAI_THI>
+	<MSG_NHAP_TIME_BAI_THI>Hãy nhập thời gian bai thi!</MSG_NHAP_TIME_BAI_THI>
+	<MSG_CHON_CHU_DE_CAU_HOI>Hãy chọn chủ đề câu hỏi</MSG_CHON_CHU_DE_CAU_HOI>
+	<MSG_NHAP_NOI_DUNG>Hãy nhập nội dung câu hỏi</MSG_NHAP_NOI_DUNG>
+	<MSG_CHON_MUC_DO>Hãy chọn mức độ câu hỏi</MSG_CHON_MUC_DO>
+	<MSG_NHAP_NOI_DUNG>Hãy nhập nội dung câu hỏi</MSG_NHAP_NOI_DUNG>
+	<MSG_NHAP_DAP_AN>Hãy nhập nội dung đáp án</MSG_NHAP_DAP_AN>
+	<MSG_BAN_CHUA_CHON>Bạn chưa chọn ứng viên</MSG_BAN_CHUA_CHON>
+	<!--****************************SEND MAIL TEST_ONLINE*********************************-->
+	<!--<HOST>smtp.vietnamairlines.com</HOST>-->
+	<!--<HOST>smtp.gmail.com</HOST>-->
+	<HOST>smtp.aits.vn</HOST>
+	<PORT>587</PORT>
+	<!--<USER_NAME>namnh.aits@vietnamairlines.com</USER_NAME>
+	<PASSWORD>zxcvbnm12345@</PASSWORD>-->
+	<USER_NAME>namnh@aits.vn</USER_NAME>
+	<PASSWORD>qwertyuiop123@</PASSWORD>
+
+
+	<!--New Template-->
+	<URL_TRANG_CHU>/index.aspx</URL_TRANG_CHU>
+	<URL_SIGN_IN>/Modules/UngVien/UVLogin</URL_SIGN_IN>
+	<!--END: New Template-->
+	<!--****************************END: TEST_ONLINE*********************************-->
+
+</Titles>

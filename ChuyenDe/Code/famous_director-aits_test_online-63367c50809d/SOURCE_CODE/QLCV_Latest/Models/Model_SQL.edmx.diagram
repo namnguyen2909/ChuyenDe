@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="69d7b2b3521240e49934897813c59251" Name="Diagram1" ZoomLevel="87">
+        <AssociationConnector Association="ATCLModel.FK_TBL_NGUOI_DUNG_QUYEN_NguoiDung" />
+        <EntityTypeShape EntityType="ATCLModel.BAI_THI" Width="1.5" PointX="3.75" PointY="4.5" />
+        <EntityTypeShape EntityType="ATCLModel.BAI_THI_CAU_HOI" Width="1.5" PointX="8.25" PointY="6.75" />
+        <EntityTypeShape EntityType="ATCLModel.BAI_THI_UNG_VIEN" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="ATCLModel.CAU_HINH_BAI_THI" Width="1.5" PointX="6" PointY="10.75" />
+        <EntityTypeShape EntityType="ATCLModel.CAU_HOI" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="ATCLModel.CAU_HOI_MUC_DO" Width="1.5" PointX="8.25" PointY="11.125" />
+        <EntityTypeShape EntityType="ATCLModel.CHU_DE_BAI_THI" Width="1.5" PointX="1.5" PointY="6.25" />
+        <EntityTypeShape EntityType="ATCLModel.DAP_AN" Width="1.5" PointX="5.25" PointY="19" />
+        <EntityTypeShape EntityType="ATCLModel.LOAI_CAU_HOI" Width="1.5" PointX="0.75" PointY="11.125" />
+        <EntityTypeShape EntityType="ATCLModel.MUC_DO_BAI_THI" Width="1.5" PointX="1.5" PointY="16" />
+        <EntityTypeShape EntityType="ATCLModel.MUC_DO_CAU_HOI" Width="1.5" PointX="6" PointY="7.25" />
+        <EntityTypeShape EntityType="ATCLModel.NGUOI_DANH_GIA" Width="1.5" PointX="3.75" PointY="28.625" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_BAO_CAO_CV" Width="1.5" PointX="10" PointY="19.375" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_DANH_MUC" Width="1.5" PointX="10.75" PointY="4.125" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_DS_TAI_LIEU" Width="1.5" PointX="0.75" PointY="20.125" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_HE_THONG" Width="1.5" PointX="13" PointY="9.875" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_HOP_DA" Width="1.5" PointX="15.25" PointY="11.5" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_HOP_DONG" Width="1.5" PointX="10.75" PointY="12" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_MENU" Width="1.5" PointX="20" PointY="4.375" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_MENU_LOAI" Width="1.5" PointX="17.75" PointY="5" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_MENU_QUYEN" Width="1.5" PointX="22.25" PointY="5" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_NGUOI_DUNG" Width="1.5" PointX="17.75" PointY="12.375" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_NGUOI_DUNG_PHONG_BAN" Width="1.5" PointX="5.75" PointY="15.125" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_NGUOI_DUNG_QUYEN" Width="1.5" PointX="20" PointY="13" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_NHIEM_VU" Width="1.5" PointX="15.25" PointY="16.75" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_PHONG_BAN" Width="1.5" PointX="1.5" PointY="29" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_QUYEN" Width="1.5" PointX="20" PointY="8.875" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_QUYEN_RULE" Width="1.5" PointX="7.75" PointY="15.125" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_RUI_RO" Width="1.5" PointX="15.25" PointY="5.125" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_RULE" Width="1.5" PointX="9.75" PointY="16.125" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_THEO_DOI_CV" Width="1.5" PointX="17.75" PointY="17.125" />
+        <EntityTypeShape EntityType="ATCLModel.TBL_TIMESHEET" Width="1.5" PointX="7.75" PointY="19.375" />
+        <EntityTypeShape EntityType="ATCLModel.UNG_VIEN" Width="1.5" PointX="3.75" PointY="23.625" />
+        <EntityTypeShape EntityType="ATCLModel.UNG_VIEN_TRA_LOI" Width="1.5" PointX="8.25" PointY="3.125" />
+        <AssociationConnector Association="ATCLModel.FK_BAI_THI_CAU_HOI_BAI_THI" />
+        <AssociationConnector Association="ATCLModel.FK_BAI_THI_CHU_DE_BAI_THI" />
+        <AssociationConnector Association="ATCLModel.FK_BAI_THI_MUC_DO_BAI_THI" />
+        <AssociationConnector Association="ATCLModel.FK_BAI_THI_UNG_VIEN_BAI_THI" />
+        <AssociationConnector Association="ATCLModel.FK_CAU_HINH_BAI_THI_BAI_THI" />
+        <AssociationConnector Association="ATCLModel.FK_BAI_THI_CAU_HOI_CAU_HOI" />
+        <AssociationConnector Association="ATCLModel.FK_BAI_THI_UNG_VIEN_NGUOI_DANH_GIA" />
+        <AssociationConnector Association="ATCLModel.FK_BAI_THI_UNG_VIEN_UNG_VIEN" />
+        <AssociationConnector Association="ATCLModel.FK_UNG_VIEN_TRA_LOI_BAI_THI_UNG_VIEN" />
+        <AssociationConnector Association="ATCLModel.FK_CAU_HINH_BAI_THI_LOAI_CAU_HOI" />
+        <AssociationConnector Association="ATCLModel.FK_CAU_HOI_CHU_DE_BAI_THI" />
+        <AssociationConnector Association="ATCLModel.FK_CAU_HOI_LOAI_CAU_HOI" />
+        <AssociationConnector Association="ATCLModel.FK_CAU_HOI_MUC_DO_CAU_HOI1" />
+        <AssociationConnector Association="ATCLModel.FK_DAP_AN_CAU_HOI" />
+        <AssociationConnector Association="ATCLModel.FK_CAU_HOI_MUC_DO_MUC_DO_CAU_HOI2" />
+        <AssociationConnector Association="ATCLModel.FK_NGUOI_DANH_GIA_TBL_PHONG_BAN" />
+        <AssociationConnector Association="ATCLModel.FK_BAO_CAO_CV_TIMESHEET" />
+        <AssociationConnector Association="ATCLModel.FK_HOP_HE_THONG_DA" />
+        <AssociationConnector Association="ATCLModel.FK_NHIEM_VU_DU_AN" />
+        <AssociationConnector Association="ATCLModel.FK_RUI_RO_HE_THONG_DA" />
+        <AssociationConnector Association="ATCLModel.FK_TBL_HE_THONG_HOP_DONG" />
+        <AssociationConnector Association="ATCLModel.FK_Menu_Quyen_Menu" />
+        <AssociationConnector Association="ATCLModel.FK_Menus_Menu_Loai" />
+        <AssociationConnector Association="ATCLModel.FK_Menu_Quyen_Quyen" />
+        <AssociationConnector Association="ATCLModel.FK_NguoiDung_Quyen_NguoiDung" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

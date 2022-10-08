@@ -1,0 +1,122 @@
+.dang_ky_ung_tuyen,.dang_nhap_ung_tuyen {
+    font-family: Montserrat;
+    padding: 2rem;
+    background: #ffffff;
+    border: 0.5px solid #f4eeee;
+    box-sizing: border-box;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dang_nhap-group_input{
+    margin-top: 100px;
+}
+.all_text_css {
+    border-right: 1px solid #c4c4c4;
+    padding: 1rem 3rem;
+}
+.all_text_css,
+.dang_ky-title {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 34px;
+    /* identical to box height */
+
+    color: #006885;
+}
+.dang_ky-text_field {
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #2c2c2c;
+}
+.dang_ky-text_field .input {
+    padding-top: 2rem;
+    border: none;
+    border-bottom: 0.5px solid #c4c4c4;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #9c9c9c;
+}
+.dang_ky-text_field .input:hover {
+    padding-top: 2rem;
+    border: none;
+    border-bottom: 0.5px solid #007c9d;
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #9c9c9c;
+}
+.dang_ky-text_field .input:focus {
+    padding-top: 2rem;
+    outline: none;
+    border-bottom: 0.5px solid #007c9d;
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #9c9c9c;
+}
+.dang_ky-text_field .btn-dang_nhap {
+    border: #006885;
+    width: 100%;
+    height: 53px;
+
+    background: #006885;
+    border-radius: 36px;
+
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+}
+.dang_ky_nhanh {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #006885;
+}
+.dang_ky_nhanh a:hover {
+    color: #007c9d;
+    font-weight: bold;
+    background-color: white;
+    line-height: auto;
+}
+.button-dang_nhap {
+    text-align: center;
+}
+.btn-dang_nhap:hover{
+    background: #007c9d;
+    border: 1px solid #007c9d;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.btn-facebook,
+.btn-google {
+    border: none;
+    background: transparent;
+    margin: 0 auto;
+}
+.btn-facebook:hover,
+.btn-google:hover {
+    /* background: #007c9d; */
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(202, 111, 111, 0.25);
+    border-radius: 100%;
+    color: #ffffff;
+}
+
+.logo_image {
+    align-items: center;
+    height: 200px;
+    width: 410px;
+    margin: 1rem auto;
+}

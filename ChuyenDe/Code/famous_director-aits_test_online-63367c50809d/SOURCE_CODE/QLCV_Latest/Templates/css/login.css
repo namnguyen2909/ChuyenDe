@@ -1,0 +1,258 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 26, 2018, 4:50:59 PM
+    Author     : CuongPD3
+*/
+
+.login-body {
+    background: url(resource/image/bg.png); 
+    background-size: cover; min-height: 100%;
+    min-width: 100%; 
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: absolute;
+}
+
+.abc {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    /*opacity: 0.5; background-color: #38659C;*/
+    /*background-color: rgba(56, 101, 156, 0.5) !important;*/
+}
+
+nav div {
+    margin-top: 5px;
+    width: 100%;
+    color: white;
+    /*font-weight: bold;*/
+}
+nav div div:first-child {
+    width: 70%;
+    float: left;
+}
+
+nav div div:nth-child(2) {
+    width: 30%;
+    float: left;
+}
+
+nav div div:nth-child(2) img {
+    float: right;
+}
+.footer-custom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(56, 101, 156, 0.5);
+    /*opacity: 0.5; background-color: #38659C;*/
+    color: white;
+    
+}
+
+body > .container {
+    padding: 110px 15px 0;
+}
+
+.login-img {
+    width: 50px;
+    float: right;
+    margin-top: 25px;
+}
+
+.login {
+	margin-top: 40%;
+}
+
+.login div {
+    color: #38659C;
+    width: 100%;
+}
+
+.login .title {
+    margin: 20px 0 30px 0;
+}
+
+.login h3, .login h4 {
+	font-family: "Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+.login h3 {
+	font-size: 18px;
+}
+
+.login h4 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+.login div:first-child {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.login div div:first-child {
+    width: 50%;
+    float: left;
+}
+
+.login div div:nth-child(2) {
+    width: 48%;
+    float: left
+}
+
+.footer-custom div div {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.footer-custom div div div:first-child {
+    width: 60%;
+    float: left;
+    margin-top: -5px;
+}
+
+.footer-custom div div div:nth-child(2) {
+    /*width: 35%;*/
+    /*float: left;*/
+    text-align: right;
+}
+
+.footer-custom div div div img {
+    width: 30px;
+}
+
+.error {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.msg {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+#login-box {
+	width: 300px;
+	padding: 20px;
+	margin: 100px auto;
+	background: #c6c6c6;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #f4f4f4;
+}
+
+.btn-primary {
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #FFFFFF;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary.active:focus {
+  background-color: #18a689;
+  border-color: #18a689;
+  color: #FFFFFF;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary.active[disabled],
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #1dc5a3;
+  border-color: #1dc5a3;
+}
+
+.form-control:focus,
+.single-line:focus {
+  border-color: #1ab394;
+}
+
+.login-form {
+	background: #fff;
+	width: 450px;
+    right: 0;
+    padding: 0 50px;
+    position: absolute;
+    height: 100%;
+}
+
+.login-form .copyright {
+	float: right;
+    color: #696969;
+    font-size: 0.78em;
+    padding: 10px;
+}
+
+.login-form .footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.login-form .footer img {
+	width: 24px;
+}
+
+.login-form .footer .info {
+	    float: left;
+    padding: 5px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+	.login-form {
+		width: 100%;
+		padding: 0 5%;
+	}
+	body > img {
+		width: 100% !important;
+		right: 0 !important;
+	}
+		
+}

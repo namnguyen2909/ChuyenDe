@@ -1,0 +1,157 @@
+/* ---------------------------------------------------- Header */
+
+/* Section top-bar */
+.top-bar {
+    background-color: rgb(255, 255, 255);
+}
+
+.top-logo {
+    width: 153.74px;
+    height: 75.11px;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar-custom {
+    margin: 0;
+    padding: 15px 0px 10px 0px;
+}
+
+.icon-bar {
+    background-color: #094e62;
+}
+
+.navbar-right > li > a {
+    list-style: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 25px 2px;
+    margin: 0 10px;
+    /* identical to box height */
+
+    color: #6b6b6b;
+}
+
+    .navbar-right > li > a:hover::after {
+        content: " ";
+        display: block;
+        height: 2px;
+        background-color: #007c9d;
+        border-radius: 3px;
+    }
+
+    .navbar-right > li > a:hover {
+        color: #007c9d;
+        font-weight: bold;
+        background-color: white;
+    }
+
+.btn:focus {
+    border: 1px solid green;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn_dang-ky,
+.btn_dang-nhap {
+    height: 36px;
+    width: 160px;
+    border-radius: 30px;
+    color: #01abd9;
+    background: #ffffff;
+    border: 1px solid #007c9d;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    /* identical to box height */
+    margin: 15px 5px;
+    text-align: center;
+}
+
+    .btn_dang-ky:hover,
+    .btn_dang-nhap:hover {
+        background: #01abd9;
+        border: 1px solid #01abd9;
+        box-sizing: border-box;
+        color: #ffffff;
+    }
+/* End Section top-bar */
+/* Section main-nav */
+#myMainNav {
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav {
+    /* padding: 0; */
+    /* padding: 1rem 0; */
+    height: 40px;
+    background-color: #dba410;
+    border-radius: 0px 0px 20px 0px;
+}
+    /* .main-nav .container {
+    padding: 0;
+} */
+    .main-nav > .container > .navbar {
+        border: none;
+        margin: 0;
+    }
+
+.main-nav_custom .container-fluid {
+    padding: 0;
+}
+
+.navbar-nav_custom {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    /* padding: 0; */
+    margin: 0;
+    list-style-type: none;
+}
+
+    .navbar-nav_custom li {
+        background-color: transparent;
+        padding: 2px 0;
+    }
+
+    .navbar-nav_custom > li > a {
+        background-color: transparent;
+        padding: 8px 10px;
+        border-right: 1px solid #be8d08;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+        text-align: center;
+        color: #6b6b6b;
+    }
+
+        .navbar-nav_custom > li > a:hover {
+            background-color: transparent;
+            color: #007c9d;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .navbar-nav_custom > li > a:focus {
+            background-color: #febe12;
+            border-radius: 0px 0px 5px 5px;
+            /* padding: 10px; */
+            color: #007c9d;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+        }
+/* END Section main-nav */
+
+/* ---------------------------------------------------- End Header */

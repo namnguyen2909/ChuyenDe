@@ -1,0 +1,240 @@
+.validation_css {
+    color: red;
+    display: none;
+}
+
+.pop_up_background_css {
+    background: #cccccc;
+    position: fixed;
+            
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;    
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.pop_up_background_message_css {
+    z-index: 100003;
+}
+
+.pop_up_info_css {
+    background: #ffffff;
+    position: fixed;
+            
+    z-index: 100002;
+    left: 50%;
+    top: 50%;
+    width: 960px;
+    height: 600px;
+    margin: -300px 0 0 -480px;
+    padding: 20px;
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important; /* For IE8 and earlier */
+    border: 1px solid #016986;    
+    overflow: scroll;
+}
+
+.pop_up_message_css {
+    width: 600px;
+    height: 300px;
+    margin: -150px 0 0 -300px;
+    overflow: hidden;
+    text-align: center;
+    background: #ffe4bd;  
+    z-index: 100005;  
+}
+
+.pop_up_message_css .close_css {
+    left: 96%;
+}
+
+span.message_box_css {
+    font-size: 20px;
+    color: red;
+    margin-top: 21px;
+    display: block;
+}
+
+.hidden_css {
+    display: none;
+}
+
+.close_css {
+    position: absolute;
+    left: 97%;
+    top: 0;
+    padding: 0px 5px 0px 5px !important;
+    margin-top: 2px;    
+}
+
+.label_1 {
+    color: #000000;
+    font-weight: normal;
+}
+
+label.control-label.title_css.title_css_1 {
+    text-transform: none;
+    margin: 20px 0 5px 0;
+    color: #7c7c7c;
+}
+
+.text_multi_line_css {
+    margin-bottom: 5px;
+}
+
+.margin_css
+{
+    margin: 0 0 20px -15px;
+}
+
+.a_report_css {
+    width: 100%;
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px 0 5px 20px;
+}
+
+.form_css .panel-heading {
+    background: #e0890d !important;
+}
+
+.panel-primary {
+    border-color: #8394a4 !important;
+}
+
+.time_css {
+    width: 100%;
+    margin-bottom: 10px;    
+    float: left;
+}
+
+.time_1_css 
+{
+    float: left;
+    width: 90px;
+
+    height: 34px;
+    padding: 0px 6px;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.p1_css {
+    width: 1px;
+    padding: 8px 8px 0 8px;
+    float: left;
+    font-weight: bold;
+}
+
+.note_2_css {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#jv-maincontent {
+    min-height: 500px;
+}
+
+.margin_btn_css {
+    margin-top: 15px;
+}
+
+.margin_btn_1_css {
+    margin-bottom: 25px;
+}
+
+.float_right_css {
+    float: right;
+    margin-left: 4px;
+}
+
+.title_b_css {
+    margin-left: -14px;
+    text-transform: uppercase;
+    color: #e0890d !important;
+}
+
+.title_b_2_css {
+    margin: 15px 0 15px 0 !important;
+}
+
+.title_b_2_css .panel-title{    
+    text-transform: none !important;
+    color: #e0890d !important;
+    font-size: 13px;
+}
+
+.row_select_css .txt_css {
+    float: right;
+    width: 50%;    
+}
+
+.title_b_3_css {    
+    background: #ffc067;
+    border: 1px solid #e0890d;
+    padding: 5px 5px 5px 5px !important;    
+
+}
+
+.title_b_3_css .panel-title {
+    color: #000000 !important;    
+}
+
+.er_oc_css tr td {
+    border: 1px solid #7c7c7c;
+    color: #000000 !important;
+    padding: 0 10px 0 10px;
+}
+
+.er_oc_css tr td input {
+    width: 100% !important;
+}
+
+.note_css_9 {
+    width: 100%;
+}
+
+.title_b_2_css .point_css {
+    color: #0488c2; 
+    cursor: pointer;   
+}
+
+.system_log_css {
+    background: #ebe7e7;
+    width: 95%;
+    float: left;
+}
+
+.title_b_4_css .panel-title{
+    color: #7c7c7c !important;
+}
+
+.st_css {
+    font-weight: normal !important;
+    color: #016986;
+    font-style: italic;
+}
+
+.control_tbl_css .btn_EditAgain_CSS, .control_tbl_css .btn_Approval_CSS {
+    color: #ffffff !important;
+}
+
+.button_css_1 {
+    margin-right: 15px;
+}
+
+.tenbaithi_css{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

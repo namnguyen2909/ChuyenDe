@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootAITS.master.cs" Inherits="CPanel.RootAITS" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <%-- Bootstrap --%>
+    <link href="/Content/bootstrapTemplate/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/Content/bootstrapTemplate/js/jquery.min.js"></script>
+    <script src="/Content/bootstrapTemplate/js/bootstrap.min.js"></script>
+    <%-- END Bootstrap --%>
+
+    <link rel="stylesheet" href="/Content/css/style.css">
+     <!-- Banner -->
+    <script src="/Content/SlideShow/js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script src="/Content/SlideShow/js/slide_tuyen.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="/Content/SlideShow/css/style.css" />
+    <!-- End Banner -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <!-- End fonts -->
+
+    
+
+    <title><%=CPanel.Commons.TitleConst.getTitleConst("TITLE_PAGE_ATCL") %>
+    </title>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        
+        <div id="main-page">
+            
+            <!--Begin: Content-->
+            
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+           
+            <!--End: Content-->
+            
+            <!-----------------------------------BEGIN: Info Footer-------------------------------------->
+            <footer style="font-weight:100%">
+                <div class="footer_css footer_info_css" id="info_footer" style="margin-top:0px">
+                    <div class="container container_css">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="logo_footer_css">
+                                    <img src="/Content/images/footer-logo-aits.png" alt="logo-footer">
+
+                                   <%-- <div style="float:right">
+                                        <asp:Label ID="txtFullName" runat="server"></asp:Label>; &nbsp;&nbsp;                                    
+                                        Đơn vị: 
+                                        <asp:DropDownList ID="drpDepartments" AutoPostBack="true" CssClass="form-control element_tab_css" runat="server"></asp:DropDownList>
+                                        <asp:LinkButton ID="btnLogout" runat="server" OnClick="btnLogout_Click" CssClass="mau" Text="Thoát" ></asp:LinkButton>
+                                        <asp:LinkButton ID="btnChangePassword" runat="server" CssClass="mau" OnClick="btnChangePassword_Click" Text="Đổi Password"></asp:LinkButton>
+
+                                    </div>--%>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5 title_footer_css">
+
+                                <div class="footer_ait_title_css">Công ty Cổ phần Tin học - Viễn thông Hàng không</div>
+                                <div class="imgTest_css">
+                                    <img src="/Content/images/bo-cong-thuong.png" alt="Image logo BaiThi">
+                                </div>
+
+                                <div class="link_logo_css">
+                                    <a href="#">
+                                        <div class="icon_round_css icon_fb_css"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 firm_info_css">
+                                <div class="footer_ait_title_css">Thông tin liên hệ</div>
+
+                                <div class="buiding_css">
+                                    <span class="vpdd_icon_css add_css"></span>
+                                    <p>
+                                        Số 412 Nguyễn Văn Cừ,
+                                    Phường Bồ Đề, Quận Long Biên, TP Hà Nội, Việt Nam
+                                    </p>
+                                </div>
+                                <div class="buiding_css">
+                                    <span class="tel_icon_css add_css"></span>
+                                    <p>
+                                        <b>Tel: 1900 98 98 66</b>
+                                        &nbsp;&nbsp;&nbsp; <b><span class="mess_icon_css add_css"></span>Ext: 9511</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 firm_info_css">
+                                <div class="footer_ait_title_css">
+                                    <br>
+                                </div>
+                                <div class="buiding_css">
+                                    <!-- <span class="vpdd_icon_css add_css"></span> -->
+                                    <p>
+                                        VPĐD: Tầng 3, Tòa nhà VPCN Phía Nam, TCT HKVN
+                                        <br>
+                                        Số 49 Trường Sơn, Quận Tân Bình, TP HCM, Việt Nam
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-----------------------------------BEGIN: Info Footer-------------------------------------->
+                <div class="footer_coppyright">
+                    <div class="container">
+                        <p style="text-align:center;">2019 bản quyền bởi Công ty Cổ phân Tin học - Viễn thông Hàng không AITS</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <script type="text/javascript">jssor_1_slider_init();</script> 
+    <script src="/Templates/js/atcl_lib.js"></script>   
+    <link href="/Content/bootstrapTemplate/css/responsive.css" rel="stylesheet" />
+</body>
+ <style>
+     .mau{
+         color:white !important;
+     }
+ </style>
+</html>
